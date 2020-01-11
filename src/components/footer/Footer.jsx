@@ -4,9 +4,16 @@ import "./Footer.css";
 
 const Footer = () => {
     return (
-        <>
-            <p>Footer!</p>
-        </>
+        <footer>
+            <div>
+                <a href="#">rss</a>
+            </div>
+            <a href="#">Twitter</a>
+            {" • "}
+            <a href="#">Instagram</a>
+            {" • "}
+            <a href="#">GitHub</a>
+        </footer>
     );
 };
 

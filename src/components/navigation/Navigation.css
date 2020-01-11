@@ -1,0 +1,21 @@
+nav {
+    margin-bottom: 2rem;
+}
+
+input {
+    height: 24px;
+    outline: none;
+    border: none;
+
+    font-size: 1rem;
+    color: white;
+
+    background: black;
+
+    caret-color: white;
+}
+
+input::selection {
+    background: red;
+    color: black;
+}

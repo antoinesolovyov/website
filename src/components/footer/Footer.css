@@ -1,3 +1,19 @@
-p {
+footer div {
+    float: right;
+}
+
+a {
     color: white;
+    text-decoration: none;
+    box-shadow: 0 2px 0 0 white;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+    box-shadow: none;
+}
+
+span {
+    color: green;
 }
