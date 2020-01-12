@@ -1,0 +1,25 @@
+article {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 2rem;
+}
+
+h3 {
+    color: white;
+    margin: 0.5rem 0;
+    padding: 0 0;
+}
+
+p {
+    color: white;
+    margin: 0.5rem 0;
+    padding: 0 0;
+}
+
+img {
+    background: white;
+    margin: 0.5rem 0;
+    padding: 2rem 12rem;
+    width: 16rem;
+}
