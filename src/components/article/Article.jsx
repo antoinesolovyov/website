@@ -9,7 +9,7 @@ const Article = () => {
                 <header>
                     <h3>Neuron</h3>
                     <div>
-                        <p>8 min</p>
+                        <p>10 min</p>
                     </div>
                 </header>
                 <p>
