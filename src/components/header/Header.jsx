@@ -6,6 +6,10 @@ const Header = () => {
     return (
         <header>
             <h1>Blog about everything!</h1>
+            <div>
+                <p>[–]
+                </p>
+            </div>
         </header>
     );
 };

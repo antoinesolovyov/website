@@ -6,7 +6,12 @@ const Article = () => {
     return (
         <>
             <article>
-                <h3>Neuron</h3>
+                <header>
+                    <h3>Neuron</h3>
+                    <div>
+                        <p>4 min</p>
+                    </div>
+                </header>
                 <p>
                     A neuron (also called neurone or nerve cell) is a cell that
                     carries electrical impulses. Neurons are the basic
@@ -15,7 +20,12 @@ const Article = () => {
                 <img src="imgs/neuron.png" alt="neuron" />
             </article>
             <article>
-                <h3>Artificial neural networks</h3>
+                <header>
+                    <h3>Artificial neural network</h3>
+                    <div>
+                        <p>4 min</p>
+                    </div>
+                </header>
                 <p>
                     Artificial neural networks (ANN) or connectionist systems
                     are computing systems vaguely inspired by the biological

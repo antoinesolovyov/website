@@ -12,7 +12,7 @@ const Footer = () => {
             <a href="#">GitHub</a>
 
             <div>
-                <a href="#">:3</a>
+                <p>[c]</p>
             </div>
         </footer>
     );
