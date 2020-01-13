@@ -8,9 +8,6 @@ article {
     border: 2px solid white;
 }
 
-article div {
-}
-
 h3 {
     display: flex;
     color: white;
@@ -28,6 +25,7 @@ p {
 }
 
 img {
+    display: flex;
     background: white;
     padding: 2rem 10rem;
     max-width: 18rem;

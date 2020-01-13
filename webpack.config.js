@@ -1,6 +1,11 @@
 const path = require("path");
+const webpack = require("webpack");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
+    devServer: {
+        hot: true
+    },
     module: {
         rules: [
             {
@@ -19,5 +24,11 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, "dist"),
         filename: "main.js"
-    }
+    },
+    plugins: [
+        new webpack.HotModuleReplacementPlugin(),
+        new HtmlWebpackPlugin({
+            template: path.join(__dirname, "index.html")
+        })
+    ]
 };
