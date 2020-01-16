@@ -1,12 +1,36 @@
 html {
     font: 100%/1.5 "Menlo";
-    color: white;
 }
 
 body {
-    background: black;
-
+    background: var(--background-color);
+    color: var(--color);
     margin: 0 auto;
     max-width: 40rem;
-    padding: 2rem 1rem;
+    padding: 2rem 0rem;
+}
+
+.black {
+    --background-color: black;
+    --border-color: white;
+    --color: white;
+    --main-color: red;
+    --box-shadow-color: white;
+    --button-text-color: black;
+    --button-color: white;
+}
+
+.white {
+    --background-color: white;
+    --border-color: black;
+    --color: black;
+    --main-color: red;
+    --box-shadow-color: black;
+    --button-text-color: white;
+    --button-color: black;
+}
+
+*::selection {
+    background: var(--main-color);
+    color: black;
 }

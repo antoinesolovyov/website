@@ -1,16 +1,13 @@
 article {
     display: flex;
     flex-direction: column;
-
     margin-top: 2rem;
-
     padding: 1rem;
-    border: 2px solid white;
+    border: 2px solid var(--border-color);
 }
 
 h3 {
     display: flex;
-    color: white;
     margin: 0;
     margin-bottom: 1rem;
     padding: 0 0;
@@ -18,7 +15,6 @@ h3 {
 
 p {
     display: flex;
-    color: white;
     margin: 0;
     margin-bottom: 1rem;
     padding: 0 0;
@@ -27,6 +23,6 @@ p {
 img {
     display: flex;
     background: white;
-    padding: 2rem 10rem;
-    max-width: 18rem;
+    padding: 2rem 4rem;
+    max-width: 32rem;
 }

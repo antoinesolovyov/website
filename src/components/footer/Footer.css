@@ -7,17 +7,11 @@ footer div {
 }
 
 a {
-    color: white;
+    color: var(--color);
     text-decoration: none;
-    box-shadow: 0 2px 0 0 white;
+    box-shadow: 0 2px 0 0 var(--box-shadow-color);
 }
 
 a:hover {
-    color: white;
-    text-decoration: none;
     box-shadow: none;
-}
-
-span {
-    color: green;
 }

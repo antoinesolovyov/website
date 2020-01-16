@@ -18,11 +18,7 @@ const Navigation = () => {
 
     return (
         <nav>
-            <input
-                type="text"
-                value={inputText}
-                onChange={onChangeHandler}
-            />
+            <input type="text" value={inputText} onChange={onChangeHandler} />
         </nav>
     );
 };
