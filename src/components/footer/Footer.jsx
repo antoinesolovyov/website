@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./Footer.css";
+import Weather from "../weather/Weather.jsx";
 
 const Footer = () => {
     return (
@@ -11,9 +12,7 @@ const Footer = () => {
             {" • "}
             <a href="#">GitHub</a>
 
-            <div>
-                <p>[c]</p>
-            </div>
+            <Weather />
         </footer>
     );
 };

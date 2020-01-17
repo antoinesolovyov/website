@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 
 import "./Header.css";
 
 const Header = () => {
     const [isBlackTheme, setIsBlackTheme] = useState(false);
 
-    const onClickHandler = () => {
+    const onClickHandler = useCallback(() => {
         if (isBlackTheme) {
             document.body.className = "black";
         } else {
@@ -13,7 +13,7 @@ const Header = () => {
         }
 
         setIsBlackTheme(!isBlackTheme);
-    };
+    }, [isBlackTheme, setIsBlackTheme]);
 
     return (
         <header>
