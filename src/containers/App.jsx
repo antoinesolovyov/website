@@ -7,13 +7,13 @@ import Footer from "../components/footer/Footer.jsx";
 import Main from "../components/main/Main.jsx";
 
 const App = () => {
-    return (
-        <>
-            <Header />
-            <Main />
-            <Footer />
-        </>
-    );
+  return (
+    <>
+      <Header />
+      <Main />
+      <Footer />
+    </>
+  );
 };
 
 export default App;
