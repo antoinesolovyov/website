@@ -30,7 +30,9 @@ let articles = [
 
 const Main = () => {
     const getArticles = () => {
-        return articles.map(articleData => <Article key={uuid.v1()} data={articleData} />);
+        return articles.map(articleData => (
+            <Article key={uuid.v1()} data={articleData} />
+        ));
     };
 
     return <main>{getArticles()}</main>;
