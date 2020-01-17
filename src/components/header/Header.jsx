@@ -16,14 +16,17 @@ const Header = () => {
   }, [isBlackTheme, setIsBlackTheme]);
 
   return (
-    <header>
-      <h1>Blog about everything!</h1>
-      <div> 
-        <button onClick={onClickHandler}>
-          {isBlackTheme ? "Black" : "White"}
-        </button>
-      </div>
-    </header>
+    <>
+      <header>
+        <h1>Blog about everything!</h1>
+        <div>
+          <button onClick={onClickHandler}>
+            {isBlackTheme ? "Black" : "White"}
+          </button>
+        </div>
+      </header>
+      <p>And a little more...</p>
+    </>
   );
 };
 

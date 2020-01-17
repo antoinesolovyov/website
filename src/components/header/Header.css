@@ -1,25 +1,26 @@
 header {
-    display:flex;
-    justify-content:space-between;align-items:center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 header h1 {
-    color: var(--main-color);
-    padding: 0px;
-    margin: 0px;
+  color: var(--main-color);
+  padding: 0px;
+  margin: 0px;
 }
 
 header button {
-    outline: none;
-    border: none;
-    font-size: 1rem;
-    font-family: Menlo;
-    padding: 0.5rem;
-    background: var(--button-color);
-    color: var(--button-text-color);
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  font-family: Menlo;
+  padding: 0.5rem;
+  background: var(--button-color);
+  color: var(--button-text-color);
 }
 
 header button:hover {
-    cursor: pointer;
-    background: var(--main-color);
+  cursor: pointer;
+  background: var(--main-color);
 }

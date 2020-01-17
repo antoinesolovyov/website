@@ -3,18 +3,13 @@ import React from "react";
 import "./Article.css";
 
 const Article = props => {
-  const { header, meta, summury, url } = props.data;
+  const { header, meta, summury, url, date } = props.data;
 
   return (
     <article>
-      <header>
-        <h3>{header}</h3>
-        <div>
-          <p>{meta}</p>
-        </div>
-      </header>
+      <h3>{header}</h3>
+      <p>{new Date(Date.parse(date)).toDateString() + " / " + meta}</p>
       <p>{summury}</p>
-      <img src={url} alt="neuron" />
     </article>
   );
 };

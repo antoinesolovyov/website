@@ -1,17 +1,17 @@
 footer {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 footer div {
-    float: right;
+  float: right;
 }
 
 a {
-    color: var(--color);
-    text-decoration: none;
-    box-shadow: 0 2px 0 0 var(--box-shadow-color);
+  color: var(--color);
+  text-decoration: none;
+  box-shadow: 0 2px 0 0 var(--box-shadow-color);
 }
 
 a:hover {
-    box-shadow: none;
+  box-shadow: none;
 }

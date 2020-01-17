@@ -2,25 +2,32 @@ article {
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
-    padding: 1rem;
+    padding: 1rem 1rem 0 1rem;
     border: 2px solid var(--border-color);
 }
 
-h3 {
+article:hover {
+    opacity: 50%;
+    cursor: pointer;
+}
+
+article h3 {
+    display: flex;
+    margin: 0;
+    margin-bottom: 1rem;
+    padding: 0 0;
+    color: var(--main-color);
+    font-size: 1.5rem;
+}
+
+article p {
     display: flex;
     margin: 0;
     margin-bottom: 1rem;
     padding: 0 0;
 }
 
-p {
-    display: flex;
-    margin: 0;
-    margin-bottom: 1rem;
-    padding: 0 0;
-}
-
-img {
+article img {
     display: flex;
     background: white;
     padding: 2rem 4rem;
