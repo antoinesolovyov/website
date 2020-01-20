@@ -43,7 +43,7 @@ const Weather = () => {
 
   return (
     <div>
-      <p class="weather">
+      <p className="weather">
         {`${name}: ${main.temp}˚`}
         <span onClick={unitsOnClick}>{unitsSymbol}</span>
       </p>

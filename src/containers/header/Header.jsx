@@ -1,4 +1,5 @@
 import React, { useState, useCallback } from "react";
+import { Link } from "react-router-dom";
 
 import "./Header.css";
 
@@ -20,7 +21,9 @@ const Header = () => {
   return (
     <>
       <header>
-        <Title text={"Blog about everything!"} />
+        <Link to="/">
+          <Title text={"Blog about everything!"} />
+        </Link>
         <div>
           <button onClick={onClickHandler}>
             {isBlackTheme ? "Black" : "White"}

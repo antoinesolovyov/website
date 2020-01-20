@@ -14,7 +14,7 @@ const Article = props => {
       <Link to={"/" + path}>
         <Subtitle text={header} />
       </Link>
-      <Paragraph text={date + " / " + meta} />
+      <Paragraph text={date + " • " + meta} />
       <Paragraph text={summury} />
     </article>
   );

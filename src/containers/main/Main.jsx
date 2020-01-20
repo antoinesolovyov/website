@@ -8,10 +8,10 @@ import Posts from "../../components/posts/Posts.jsx";
 
 const Main = () => {
   return (
-    <BrowserRouter>
+    <>
       <Route path="/" exact component={Articles} />
       <Posts />
-    </BrowserRouter>
+    </>
   );
 };
 
