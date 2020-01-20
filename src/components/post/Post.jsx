@@ -23,7 +23,7 @@ function getPost(post) {
         return <Image url={element[1]} alt={element[2]} />;
       
       default:
-        return "";
+        return <></>;
     }
   });
 }

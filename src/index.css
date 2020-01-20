@@ -1,5 +1,5 @@
 html {
-  font: 100%/1.5 "Menlo";
+  font: 100%/1.5 Helvetica;
 }
 
 body {
@@ -14,7 +14,7 @@ body {
   --background-color: black;
   --border-color: white;
   --color: white;
-  --main-color: red;
+  --main-color: rgb(255, 0, 128);
   --box-shadow-color: white;
   --button-text-color: black;
   --button-color: white;
@@ -24,7 +24,7 @@ body {
   --background-color: white;
   --border-color: black;
   --color: black;
-  --main-color: red;
+  --main-color: rgb(255, 0, 128);
   --box-shadow-color: black;
   --button-text-color: white;
   --button-color: black;

@@ -21,16 +21,16 @@ module.exports = {
     ]
   },
   mode: "development",
-  entry: "./main.js",
+  entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "main.js",
+    filename: "index.js",
     publicPath: '/'
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, "index.html")
+      template: path.join(__dirname, "public/index.html")
     })
   ]
 };

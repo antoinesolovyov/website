@@ -1,8 +1,6 @@
 import React from "react";
 import uuid from "uuid";
 
-import { Link } from "react-router-dom";
-
 import Article from "../article/Article.jsx";
 
 let articles = [
@@ -37,11 +35,7 @@ let articles = [
 
 const Articles = () => {
   const getArticles = () => {
-    return articles.map(articleData => (
-      <Link key={uuid.v1()} to={"/" + articleData.path}>
-        <Article data={articleData} />
-      </Link>
-    ));
+    return articles.map(articleData => <Article data={articleData} />);
   };
 
   return <main>{getArticles()}</main>;

@@ -5,13 +5,15 @@ header {
 }
 
 header button {
+  width: 4rem;
   outline: none;
-  border: none;
+  border: 2px solid var(--button-color);
+  border-radius: 4px;
   font-size: 1rem;
-  font-family: Menlo;
+  font-family: Helvetica;
   padding: 0.5rem;
-  background: var(--button-color);
-  color: var(--button-text-color);
+  background: var(--background-color);
+  color: var(--color);
 }
 
 header button:hover {
