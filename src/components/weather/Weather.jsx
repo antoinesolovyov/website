@@ -8,6 +8,7 @@ const Weather = () => {
   const [main, setMain] = useState("0");
   const [name, setName] = useState("City");
   const [units, setUnits] = useState("metric");
+  const [unitsSymbol, setUnitsSymbol] = useState("C");
 
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(position => {
@@ -25,11 +26,27 @@ const Weather = () => {
           setName(json.name);
         });
     });
-  }, []);
+  }, [units]);
+
+  const unitsOnClick = () => {
+    if (units === "metric") {
+      setUnits("imperial");
+      setUnitsSymbol("F");
+    } else if (units === "imperial") {
+      setUnits("standart");
+      setUnitsSymbol("K");
+    } else {
+      setUnits("metric");
+      setUnitsSymbol("C");
+    }
+  };
 
   return (
     <div>
-      <p>{`${name}: ${main.temp}˚C`}</p>
+      <p>
+        {`${name}: ${main.temp}˚`}
+        <span onClick={unitsOnClick}>{unitsSymbol}</span>
+      </p>
     </div>
   );
 };

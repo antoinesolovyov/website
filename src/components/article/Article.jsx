@@ -2,14 +2,17 @@ import React from "react";
 
 import "./Article.css";
 
+import Paragraph from "../../elements/paragraph/Paragraph.jsx";
+import Subtitle from "../../elements/subtitle/Subtitle.jsx";
+
 const Article = props => {
   const { header, meta, summury, url, date } = props.data;
 
   return (
     <article>
-      <h3>{header}</h3>
-      <p>{new Date(Date.parse(date)).toDateString() + " / " + meta}</p>
-      <p>{summury}</p>
+      <Subtitle text={header}/>
+      <Paragraph text={date + " / " + meta} />
+      <Paragraph text={summury} />
     </article>
   );
 };

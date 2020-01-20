@@ -2,6 +2,8 @@ import React, { useState, useCallback } from "react";
 
 import "./Header.css";
 
+import Title from "../../elements/title/Title.jsx";
+
 const Header = () => {
   const [isBlackTheme, setIsBlackTheme] = useState(false);
 
@@ -18,7 +20,7 @@ const Header = () => {
   return (
     <>
       <header>
-        <h1>Blog about everything!</h1>
+        <Title text={"Blog about everything!"} />
         <div>
           <button onClick={onClickHandler}>
             {isBlackTheme ? "Black" : "White"}

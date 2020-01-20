@@ -1,7 +1,8 @@
 import React from "react";
 import uuid from "uuid";
 
-import "./Main.css";
+import { Link } from "react-router-dom";
+
 import Article from "../article/Article.jsx";
 
 let articles = [
@@ -12,7 +13,7 @@ let articles = [
       "A neuron (also called neurone or nerve cell) is a cell that carries electrical impulses. Neurons are the basic (functional and structural) units of our nervous system.",
     url: "imgs/neuron.png",
     date: "2019-11-14",
-    path: "/neuron"
+    path: "neuron"
   },
   {
     header: "Artificial neural network",
@@ -34,14 +35,16 @@ let articles = [
   }
 ];
 
-const Main = () => {
+const Articles = () => {
   const getArticles = () => {
     return articles.map(articleData => (
-      <Article key={uuid.v1()} data={articleData} />
+      <Link key={uuid.v1()} to={"/" + articleData.path}>
+        <Article data={articleData} />
+      </Link>
     ));
   };
 
   return <main>{getArticles()}</main>;
 };
 
-export default Main;
+export default Articles;

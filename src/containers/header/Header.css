@@ -4,12 +4,6 @@ header {
   justify-content: space-between;
 }
 
-header h1 {
-  color: var(--main-color);
-  padding: 0px;
-  margin: 0px;
-}
-
 header button {
   outline: none;
   border: none;

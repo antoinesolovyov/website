@@ -4,7 +4,8 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   devServer: {
-    hot: true
+    hot: true,
+    historyApiFallback: true
   },
   module: {
     rules: [
@@ -23,7 +24,8 @@ module.exports = {
   entry: "./main.js",
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "main.js"
+    filename: "main.js",
+    publicPath: '/'
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
