@@ -54,8 +54,9 @@ const ExchangeRates = () => {
 
   function convert(money, curr, next) {
     return (
-      (money * (curr.Cur_OfficialRate / next.Cur_OfficialRate)) /
-      (curr.Cur_Scale * next.Cur_Scale)
+      (money * curr.Cur_OfficialRate) /
+      next.Cur_OfficialRate /
+      (curr.Cur_Scale / next.Cur_Scale)
     ).toFixed(2);
   }
 
