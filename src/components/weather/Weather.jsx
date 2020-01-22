@@ -42,12 +42,12 @@ const Weather = () => {
   };
 
   return (
-    <div>
+    <section>
       <p className="weather">
         {`${name}: ${main.temp}˚`}
         <span onClick={unitsOnClick}>{unitsSymbol}</span>
       </p>
-    </div>
+    </section>
   );
 };
 

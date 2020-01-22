@@ -19,19 +19,16 @@ const Header = () => {
   }, [isBlackTheme, setIsBlackTheme]);
 
   return (
-    <>
-      <header>
-        <Link to="/">
-          <Title text={"Blog about everything!"} />
-        </Link>
-        <div>
-          <button onClick={onClickHandler}>
-            {isBlackTheme ? "Black" : "White"}
-          </button>
-        </div>
-      </header>
-      <p>And a little more...</p>
-    </>
+    <header>
+      <Link to="/">
+        <Title text={"Blog about everything!"} />
+      </Link>
+      <div>
+        <button onClick={onClickHandler}>
+          {isBlackTheme ? "Black" : "White"}
+        </button>
+      </div>
+    </header>
   );
 };
 

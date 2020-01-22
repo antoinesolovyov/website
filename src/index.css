@@ -10,6 +10,13 @@ body {
   padding: 0rem 0rem;
 }
 
+section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .black {
   --background-color: black;
   --border-color: white;

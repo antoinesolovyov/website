@@ -27,7 +27,7 @@ let articles = [
     meta: "7 min read",
     summury:
       "In deep learning, a convolutional neural network (CNN, or ConvNet) is a class of deep neural networks, most commonly applied to analyzing visual imagery.",
-    url: "imgs/LeNet-5.png",
+    url: "imgs/cnn.png",
     date: "October 12, 2019",
     path: "convolutional_neural_network"
   }
@@ -38,7 +38,7 @@ const Articles = () => {
     return articles.map(articleData => <Article key={uuid.v1()} data={articleData} />);
   };
 
-  return <main>{getArticles()}</main>;
+  return <section>{getArticles()}</section>;
 };
 
 export default Articles;
