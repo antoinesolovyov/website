@@ -14,6 +14,7 @@ const App = () => {
   return (
     <>
       <Header />
+      <img width='81px' src='https://how-many-visits-lol.glitch.me/counter.svg' />
       <Main />
       <Footer />
     </>

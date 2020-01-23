@@ -16,13 +16,19 @@ function getPost(post) {
         return <Title key={uuid.v1()} text={element[1]} />;
 
       case "subtitle":
-        return <Subtitle key={uuid.v1()} text={element[1]} />;
+        return (
+          <Subtitle key={uuid.v1()} text={element[1]} anchor={element[2]} />
+        );
 
       case "paragraph":
         return <Paragraph key={uuid.v1()} text={element[1]} />;
 
       case "image":
-        return <Image key={uuid.v1()} url={element[1]} alt={element[2]} />;
+        if (typeof element[1] === "string") {
+          return <Image key={uuid.v1()} url={element[1]} alt={element[2]} />;
+        } else {
+          return element[1];
+        }
 
       case "math":
         return <Math key={uuid.v1()} text={element[1]} />;
