@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
-import "./ExchangeRates.css";
+import "./Element.css";
 
 const Element = props => {
 
@@ -21,7 +21,7 @@ const Element = props => {
   }
 
   return (
-    <div>
+    <div class="exchange-rates">
       <input type="number" value={props.value} onChange={inputOnChange} />
       <select onChange={selectOnChange} value={props.select}>
         {getOptions()}

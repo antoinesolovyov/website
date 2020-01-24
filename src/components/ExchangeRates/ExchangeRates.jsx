@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 
-import "./ExchangeRates.css";
 import Element from "./Element.jsx";
 
 const ExchangeRates = () => {
