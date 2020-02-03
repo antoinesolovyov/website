@@ -7,7 +7,6 @@ import Articles from "../../components/articles/Articles.jsx";
 import Posts from "../../components/posts/Posts.jsx";
 import Weather from "../../components/weather/Weather.jsx";
 import ExchangeRates from "../../components/ExchangeRates/ExchangeRates.jsx";
-import Search from "../../components/search/Search.jsx";
 
 const Main = () => {
   return (
@@ -23,14 +22,10 @@ const Main = () => {
         <Link to="/exchange_rates">
           <p>exchange-rates</p>
         </Link>
-        <Link to="/search_component">
-          <p>search-component</p>
-        </Link>
       </Route>
       <Route path="/articles" exact component={Articles} />
       <Route path="/weather" component={Weather} />
       <Route path="/exchange_rates" component={ExchangeRates} />
-      <Route path="/search_component" component={Search} />
     </main>
   );
 };
