@@ -21,7 +21,7 @@ section {
   --background-color: black;
   --border-color: white;
   --color: white;
-  --main-color: rgb(255, 0, 128);
+  --main-color: white;
   --box-shadow-color: white;
   --button-text-color: black;
   --button-color: white;
@@ -31,7 +31,7 @@ section {
   --background-color: white;
   --border-color: black;
   --color: black;
-  --main-color: rgb(255, 0, 128);
+  --main-color: black;
   --box-shadow-color: black;
   --button-text-color: white;
   --button-color: black;

@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Route } from "react-router-dom";
 
 import "./App.css";
 
@@ -13,9 +14,13 @@ const App = () => {
 
   return (
     <>
-      <Header />
+      <Route path="/" exact>
+        <Header />
+      </Route>
       <Main />
-      <Footer />
+      <Route path="/" exact>
+        <Footer />
+      </Route>
     </>
   );
 };

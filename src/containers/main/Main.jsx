@@ -13,15 +13,11 @@ const Main = () => {
     <main>
       <Posts />
       <Route path="/" exact>
-        <Link to="/articles">
-          <p>articles</p>
-        </Link>
-        <Link to="/weather">
-          <p>weather</p>
-        </Link>
-        <Link to="/exchange_rates">
-          <p>exchange-rates</p>
-        </Link>
+        <Link to="/articles">articles</Link>
+        <br/>
+        <Link to="/weather">weather</Link>
+        <br/>
+        <Link to="/exchange_rates">exchange-rate</Link>
       </Route>
       <Route path="/articles" exact component={Articles} />
       <Route path="/weather" component={Weather} />

@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/antoinesolovyov/website/issues"
   },
-  "homepage": "https://github.com/antoinesolovyov/website#readme",
+  "homepage": "https://antoinesolovyov.github.io/website/",
   "dependencies": {
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
@@ -34,6 +35,7 @@
     "@svgr/webpack": "^5.1.0",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.4.1",
+    "gh-pages": "^2.2.0",
     "html-webpack-plugin": "^3.2.0",
     "style-loader": "^1.1.2",
     "webpack": "^4.41.5",

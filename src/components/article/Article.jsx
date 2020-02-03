@@ -7,7 +7,7 @@ import Paragraph from "../../elements/paragraph/Paragraph.jsx";
 import Subtitle from "../../elements/subtitle/Subtitle.jsx";
 
 const Article = props => {
-  const { header, meta, summury, url, date, path } = props.data;
+  const { header, meta, summury, date, path } = props.data;
 
   return (
     <article>
