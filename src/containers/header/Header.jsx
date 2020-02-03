@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import "./Header.css";
 
-import Title from "../../elements/title/Title.jsx";
+import Title from "../../elements/title/Title";
 
 const Header = () => {
   const [isBlackTheme, setIsBlackTheme] = useState(false);

@@ -3,9 +3,9 @@ import { Route } from "react-router-dom";
 
 import "./App.css";
 
-import Header from "../header/Header.jsx";
-import Footer from "../footer/Footer.jsx";
-import Main from "../main/Main.jsx";
+import Header from "../header/Header";
+import Footer from "../footer/Footer";
+import Main from "../main/Main";
 
 const App = () => {
   useEffect(() => {

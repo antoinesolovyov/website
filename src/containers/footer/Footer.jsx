@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./Footer.css";
-import Weather from "../../components/weather/Weather.jsx";
+import Weather from "../../components/weather/Weather";
 
 const Footer = () => {
   return (

@@ -7,11 +7,13 @@ module.exports = {
     hot: true,
     historyApiFallback: true
   },
+  entry: "./src/index.jsx",
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
+        include: [/src/],
+        exclude: [/node_modules/],
         loaders: ["babel-loader"]
       },
       {
@@ -25,7 +27,9 @@ module.exports = {
     ]
   },
   mode: "development",
-  entry: "./src/index.js",
+  resolve: {
+    extensions: ['.js', '.jsx'],
+  },
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "index.js",

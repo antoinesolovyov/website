@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 import "./Article.css";
 
-import Paragraph from "../../elements/paragraph/Paragraph.jsx";
-import Subtitle from "../../elements/subtitle/Subtitle.jsx";
+import Paragraph from "../../elements/paragraph/Paragraph";
+import Subtitle from "../../elements/subtitle/Subtitle";
 
 const Article = props => {
   const { header, meta, summury, date, path } = props.data;

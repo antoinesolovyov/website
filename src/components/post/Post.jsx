@@ -2,11 +2,11 @@ import React from "react";
 
 import "./Post.css";
 
-import Title from "../../elements/title/Title.jsx";
-import Subtitle from "../../elements/subtitle/Subtitle.jsx";
-import Paragraph from "../../elements/paragraph/Paragraph.jsx";
-import Image from "../../elements/image/Image.jsx";
-import Math from "../../elements/math/Math.jsx";
+import Title from "../../elements/title/Title";
+import Subtitle from "../../elements/subtitle/Subtitle";
+import Paragraph from "../../elements/paragraph/Paragraph";
+import Image from "../../elements/image/Image";
+import Math from "../../elements/math/Math";
 import uuid from "uuid";
 
 function getPost(post) {

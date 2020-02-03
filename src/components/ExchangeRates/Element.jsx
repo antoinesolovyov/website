@@ -21,7 +21,7 @@ const Element = props => {
   }
 
   return (
-    <div class="exchange-rates">
+    <div className="exchange-rates">
       <input type="number" value={props.value} onChange={inputOnChange} />
       <select onChange={selectOnChange} value={props.select}>
         {getOptions()}

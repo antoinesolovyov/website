@@ -3,7 +3,7 @@ import uuid from "uuid";
 
 import { Route } from "react-router-dom";
 
-import Post from "../post/Post.jsx";
+import Post from "../post/Post";
 
 const posts = [
   [

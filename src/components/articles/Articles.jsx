@@ -1,7 +1,7 @@
 import React from "react";
 import uuid from "uuid";
 
-import Article from "../article/Article.jsx";
+import Article from "../article/Article";
 
 let articles = [
   {

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import Element from "./Element.jsx";
+import Element from "./Element";
 
 const ExchangeRates = () => {
   const [values, setValues] = useState([0, 0]);
