@@ -24,7 +24,6 @@ const Weather = () => {
         .then(json => {
           setMain(json.main);
           setName(json.name);
-          console.log(json);
         });
     });
   }, [units]);
