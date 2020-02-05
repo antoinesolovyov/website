@@ -29,4 +29,5 @@ select {
   color: var(--background-color);
   border: none;
   outline: none;
+  border-radius: 4px;
 }
