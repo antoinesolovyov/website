@@ -10,7 +10,7 @@ body {
   padding: 0rem 0rem;
 }
 p {
-  
+  background: black;
 }
 section {
   display: flex;
