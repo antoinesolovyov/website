@@ -16,7 +16,9 @@ section {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-
+a {
+  
+}
 .black {
   --background-color: black;
   --border-color: white;
