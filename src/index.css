@@ -9,7 +9,9 @@ body {
   max-width: 40rem;
   padding: 0rem 0rem;
 }
-
+p {
+  
+}
 section {
   display: flex;
   flex-direction: column;
